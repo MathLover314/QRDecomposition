@@ -2,7 +2,7 @@
 ![alt text](gram.png)
 
 In this project I used Gram-Shmidt process to calculate QR decomposition where Q is orthogonal and R is upper triangle matricies.
-```
+```R
 gram_shmidt <- function(A) {
   V = matrix(0, nrow = nrow(A), ncol=ncol(A))
   R = matrix(0, nrow = nrow(A), ncol=ncol(A))
@@ -24,5 +24,4 @@ gram_shmidt <- function(A) {
   }
   return(list(Q, R))
 }
-
 ```
